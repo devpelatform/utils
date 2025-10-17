@@ -6,7 +6,7 @@ const withMDX = createMDX();
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   output: 'export',
-  basePath: process.env.NODE_ENV === 'production' ? '/package-template' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/utils' : '',
   images: { unoptimized: true },
 };
 

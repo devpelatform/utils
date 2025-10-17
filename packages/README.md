@@ -1,10 +1,10 @@
-# @pelatform/package
+# @pelatform/utils
 
-This is a template package for creating a package & docs
+A library of utility functions that are used across for SaaS applications.
 
-[![Version](https://img.shields.io/npm/v/@pelatform/package-template.svg)](https://www.npmjs.com/package/@pelatform/package-template)
-[![License](https://img.shields.io/npm/l/@pelatform/package-template.svg)](https://github.com/devpelatform/package-template/blob/main/LICENSE)
+[![Version](https://img.shields.io/npm/v/@pelatform/utils.svg)](https://www.npmjs.com/package/@pelatform/utils)
+[![License](https://img.shields.io/npm/l/@pelatform/utils.svg)](https://github.com/devpelatform/utils/blob/main/LICENSE)
 
 ## Getting Started
 
-Visit https://devpelatform.github.io/package-template to get started with this package.
+Visit https://devpelatform.github.io/utils to get started with this package.
