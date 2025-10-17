@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    // Type Checking
+    "strict": true,
+    // Modules
+    "baseUrl": ".",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    // Emit
+    "declaration": true,
+    "outDir": "dist",
+    // JavaScript Support
+    "allowJs": true,
+    // Editor Support
+    // Interop Constraints
+    "esModuleInterop": true,
+    // Backwards Compatibility
+    // Language and Environment
+    "jsx": "react-jsx",
+    "lib": ["ESNext", "DOM"],
+    "target": "ES2022",
+    // Compiler Diagnostics
+    // Projects
+    "incremental": false,
+    // Output Formatting
+    // Completeness
+    "skipLibCheck": true,
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}

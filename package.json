@@ -1,0 +1,28 @@
+{
+  "name": "root",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "clean": "turbo run clean",
+    "clean:all": "turbo run clean && turbo run clean:all && rm -rf .turbo node_modules pnpm-lock.yaml",
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "start": "turbo run start",
+    "lint": "biome lint --write",
+    "format": "biome format --write",
+    "lint:format": "biome check --write",
+    "types:check": "turbo run types:check",
+    "release": "turbo run build --filter=./packages && changeset publish && pnpm -r run postpublish",
+    "version": "changeset version && pnpm install --lockfile-only"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.2.6",
+    "@changesets/cli": "^2.29.7",
+    "@types/node": "^24.8.1",
+    "dotenv-cli": "^10.0.0",
+    "rimraf": "^6.0.1",
+    "turbo": "2.5.8",
+    "typescript": "^5.9.3"
+  },
+  "packageManager": "pnpm@10.18.3"
+}

@@ -1,0 +1,57 @@
+{
+  "name": "@pelatform/package-template",
+  "version": "0.0.1",
+  "description": "This is a template package for creating a package & docs.",
+  "author": "Pelatform Dev",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "clean:all": "rimraf .turbo dist node_modules",
+    "dev": "tsup --watch",
+    "build": "tsup --clean --dts",
+    "types:check": "tsc --noEmit",
+    "prepublishOnly": "pnpm run clean && tsup --clean --dts"
+  },
+  "homepage": "https://devpelatform.github.io/package-template",
+  "files": [
+    "dist/*",
+    "README.md"
+  ],
+  "keywords": [
+    "pelatform",
+    "typescript"
+  ],
+  "devDependencies": {
+    "@types/node": "^24.8.1",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "esbuild-plugin-preserve-directives": "^0.0.11",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

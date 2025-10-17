@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@import "fumadocs-ui/css/neutral.css";
+@import "fumadocs-ui/css/preset.css";
+
+/* Set the default cursor for buttons. */
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/* Make sure disabled buttons don't get the pointer cursor. */
+:disabled {
+  cursor: default;
+}
+
+@theme {
+  --color-fd-ring: oklch(0.684 0.142 161.882);
+  --color-fd-primary: oklch(0.684 0.142 161.882);
+}
+
+.dark {
+  --color-fd-ring: oklch(0.747 0.12 165.696);
+  --color-fd-primary: oklch(0.747 0.12 165.696);
+}
