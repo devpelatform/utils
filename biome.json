@@ -10,14 +10,14 @@
       "**/*.{ts,tsx,js,jsx,cjs,mjs,cts,mts}",
       "**/*.{json,css,scss}",
       "**/*.{md,mdx,yml,yaml}",
-      "!**/.next",
-      "!**/.source",
-      "!**/.turbo",
-      "!**/build",
-      "!**/coverage",
-      "!**/dist",
-      "!**/node_modules",
-      "!**/out"
+      "!!**/.next",
+      "!!**/.source",
+      "!!**/.turbo",
+      "!!**/build",
+      "!!**/coverage",
+      "!!**/dist",
+      "!!**/node_modules",
+      "!!**/out"
     ],
     "ignoreUnknown": false
   },

@@ -36,8 +36,7 @@
     "clean:all": "rimraf .turbo dist node_modules",
     "dev": "tsup --watch",
     "build": "tsup --clean --dts",
-    "types:check": "tsc --noEmit",
-    "prepublishOnly": "pnpm run clean && tsup --clean --dts"
+    "types:check": "tsc --noEmit"
   },
   "homepage": "https://devpelatform.github.io/utils",
   "files": [
