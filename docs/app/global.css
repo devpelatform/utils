@@ -1,10 +1,10 @@
-@import "tailwindcss";
-@import "fumadocs-ui/css/neutral.css";
-@import "fumadocs-ui/css/preset.css";
+@import 'tailwindcss';
+@import 'fumadocs-ui/css/neutral.css';
+@import 'fumadocs-ui/css/preset.css';
 
 /* Set the default cursor for buttons. */
 button,
-[role="button"] {
+[role='button'] {
   cursor: pointer;
 }
 
