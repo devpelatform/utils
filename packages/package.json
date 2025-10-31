@@ -62,7 +62,7 @@
   "devDependencies": {
     "@types/jsonwebtoken": "^9.0.10",
     "@types/ms": "^2.1.0",
-    "@types/node": "^24.9.1",
+    "@types/node": "^24.9.2",
     "tsup": "^8.5.0",
     "typescript": "^5.9.3"
   },
