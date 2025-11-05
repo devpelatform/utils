@@ -25,10 +25,10 @@
     "incremental": false,
     // Output Formatting
     // Completeness
-    "skipLibCheck": true,
-    "paths": {
-      "@/*": ["src/*"]
-    }
+    "skipLibCheck": true
+    // "paths": {
+    //   "@/*": ["src/*"]
+    // }
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist"]
