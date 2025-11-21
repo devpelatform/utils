@@ -34,7 +34,8 @@
     // Completeness
     "skipLibCheck": true,
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "fumadocs-mdx:collections/*": [".source/*"]
     }
   },
   "include": [

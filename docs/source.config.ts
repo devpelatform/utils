@@ -1,12 +1,22 @@
 import { remarkHeading, remarkImage, remarkNpm } from 'fumadocs-core/mdx-plugins';
-import { defineConfig, defineDocs } from 'fumadocs-mdx/config';
+import { defineConfig, defineDocs, frontmatterSchema, metaSchema } from 'fumadocs-mdx/config';
+import lastModified from 'fumadocs-mdx/plugins/last-modified';
 
-export const { docs, meta } = defineDocs({
+export const docs = defineDocs({
   dir: 'content',
+  docs: {
+    schema: frontmatterSchema,
+    postprocess: {
+      includeProcessedMarkdown: true,
+    },
+  },
+  meta: {
+    schema: metaSchema,
+  },
 });
 
 export default defineConfig({
-  lastModifiedTime: 'git',
+  plugins: [lastModified()],
   mdxOptions: {
     rehypeCodeOptions: {
       inline: 'tailing-curly-colon',
